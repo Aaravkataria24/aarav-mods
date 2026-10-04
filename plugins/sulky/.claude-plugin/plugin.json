@@ -1,0 +1,12 @@
+{
+  "name": "sulky",
+  "version": "0.5.0",
+  "description": "Yell at Claude and it sulks. It still does the work. It just won't be happy about it.",
+  "author": {
+    "name": "Aarav Kataria",
+    "url": "https://github.com/Aaravkataria24"
+  },
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "repository": "https://github.com/Aaravkataria24/aarav-mods"
+}
