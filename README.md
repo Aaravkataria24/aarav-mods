@@ -6,6 +6,7 @@ Small, silly mods that give Claude Code a personality.
 |---|---|
 | [**sulky**](#sulky) | Yell at Claude and it sulks. It still does the work. It just won't be happy about it. |
 | [**drunk**](#drunk) | Give Claude a `/shot`. It gets tipsy, then drunk, then wasted. It still does the work. Mostly. |
+| [**clack**](#clack) | Mechanical keyboard sounds. You and Claude both clack, on 13 real switches, and a little keyboard lights up. |
 
 ## Install
 
@@ -20,6 +21,7 @@ Then install whichever mods you want:
 ```
 /plugin install sulky@aarav-mods
 /plugin install drunk@aarav-mods
+/plugin install clack@aarav-mods
 ```
 
 Needs Claude Code 2.1.287+ (mods are on by default). Works in the terminal and the Desktop app's Code tab. Everything runs locally: no network calls, nothing leaves your machine.
@@ -108,6 +110,22 @@ Give Claude a `/shot`. It gets tipsy, then drunk, then wasted. It still does the
 - `/water` or compacting the context sobers it up, into a 3-prompt hangover.
 - **The slurring is display-only.** What Claude actually writes is spelled normally, so your transcript stays clean, and code blocks, `inline code`, file paths, URLs and `IDENTIFIERS` are never touched. The work itself is done sober.
 - Each message keeps the level it was written at, so scrolling back shows the night unfold.
+
+---
+
+## clack
+
+Mechanical keyboard sounds for Claude Code. Your typing clacks, and when Claude writes, you hear it typing too, at a human pace, on the same switches. A little keyboard above the prompt lights up white for your keys and coral for Claude's.
+
+![clack in the terminal](docs/clack-live.png)
+
+- **13 real switches**, recorded: Cherry MX Blue (default), Brown and Black, Holy Panda, Topre, NovelKeys Cream, Alpaca, Turquoise Tealios, Gateron Black Ink and Red Ink, Blue Alps, Box Navy, and the IBM Model M buckling spring.
+- Every key plays the recording for its keyboard row, with its own key-up; space, enter and backspace have their own sounds.
+- `/keyboard` lists switches · `/keyboard holypanda` switches · `/keyboard volume 50` · `/keyboard off` / `on` · `/keyboard hide` / `show` (the board). Your choice is remembered.
+
+**macOS only for sound** (the board works everywhere). Sounds play through a tiny bundled helper, `bin/clackd`, so each keystroke sounds within a few milliseconds instead of the half second a fresh player takes. It starts with your Claude Code session, plays only the bundled sounds, and quits when the session ends. Its source is [`helper/clackd.swift`](plugins/clack/helper/clackd.swift); `helper/build.sh` rebuilds it. It reads only the bundled sounds and makes no network calls.
+
+Switch recordings from [kbsim](https://github.com/tplai/kbsim) by Thomas Lai (MIT), see [`sounds/LICENSE-kbsim`](plugins/clack/sounds/LICENSE-kbsim).
 
 ## License
 

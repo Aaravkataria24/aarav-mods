@@ -1,0 +1,9 @@
+{
+  "name": "clack",
+  "version": "0.1.0",
+  "description": "Mechanical keyboard sounds for Claude Code: you and Claude both clack, on 13 real switches, with a little keyboard that lights up.",
+  "author": { "name": "Aarav Kataria", "url": "https://github.com/Aaravkataria24" },
+  "license": "MIT",
+  "repository": "https://github.com/Aaravkataria24/aarav-mods",
+  "types": "./types/index.d.ts"
+}

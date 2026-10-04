@@ -14,6 +14,11 @@
       "name": "drunk",
       "source": "./plugins/drunk",
       "description": "Give Claude a /shot. It gets tipsy, then drunk, then wasted. It still does the work. Mostly."
+    },
+    {
+      "name": "clack",
+      "source": "./plugins/clack",
+      "description": "Mechanical keyboard sounds for Claude Code: you and Claude both clack, on 13 real switches, with a little keyboard that lights up."
     }
   ],
   "metadata": {
