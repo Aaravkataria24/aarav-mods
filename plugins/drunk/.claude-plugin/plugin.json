@@ -1,0 +1,9 @@
+{
+  "name": "drunk",
+  "version": "0.1.0",
+  "description": "Give Claude a /shot. It gets tipsy, then drunk, then wasted. It still does the work. Mostly.",
+  "author": { "name": "Aarav Kataria", "url": "https://github.com/Aaravkataria24" },
+  "license": "MIT",
+  "repository": "https://github.com/Aaravkataria24/aarav-mods",
+  "types": "./types/index.d.ts"
+}

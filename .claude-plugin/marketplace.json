@@ -9,6 +9,11 @@
       "name": "sulky",
       "source": "./plugins/sulky",
       "description": "Yell at Claude and it sulks. It still does the work. It just won't be happy about it."
+    },
+    {
+      "name": "drunk",
+      "source": "./plugins/drunk",
+      "description": "Give Claude a /shot. It gets tipsy, then drunk, then wasted. It still does the work. Mostly."
     }
   ],
   "metadata": {
